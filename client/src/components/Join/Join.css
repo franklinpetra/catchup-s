@@ -18,7 +18,7 @@ html, body {
     text-align: center;
     height: 100vh;
     align-items: center;
-    background-color: #1A1A1D;
+    background-color: rgb(198, 183, 170);;
 }
 
 .joinInnerContainer {
@@ -26,9 +26,10 @@ html, body {
 }
 
 .joinInput {
-    border-radius: 0;
+    border-radius: 5px;
     padding: 15px 20px;
     width: 100%;
+    border:2px solid rgb(90, 67, 67);
 }
 
 .heading {
@@ -41,13 +42,13 @@ html, body {
 .button {
     color: #fff !important;
     text-transform: uppercase;
-    text-decoration: none;
     background: #2979FF;
-    padding: 20px;
+    padding: 13px;
     border-radius: 5px;
     display: inline-block;
     border: none;
     width: 100%;
+    font-size: 1em;    
 }
 
 .mt-20 {
@@ -68,4 +69,5 @@ html, body {
 
 button:focus {
     outline: 0;
+    font-weight: bolder;
 }
