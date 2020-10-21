@@ -2,13 +2,15 @@ import React from 'react';
 import './Message.css';
 import ReactEmoji from 'react-emoji';
 
+
 const Message = ({ message: { text, user }, name }) => {
     let isSentByCurrentUser = false;
 
-    const trimmedName = name.trim().toLowerCase();
-
+    const trimmedName = name.trim().toUpperCase();
     if(user === trimmedName) {
         isSentByCurrentUser = true;
+
+
 }
 
     return (
@@ -16,6 +18,7 @@ const Message = ({ message: { text, user }, name }) => {
         ? (
             <div className="messageContainer justifyEnd">
             <p className="sentText pr-10">{trimmedName}</p>
+            <Timestamp relative date={Date} /> 
                 <div className="messageBox backgroundBlue">
                     <p className="messageText colorWhite">{ReactEmoji.emojify(text)}</p>
                 </div>
@@ -33,3 +36,5 @@ const Message = ({ message: { text, user }, name }) => {
 }
 
 export default Message;
+
+ // const trimmedName = name.charAt(0).toUpperCase().slice(1);

@@ -15,21 +15,24 @@ const TextContainer = ({ users }) => (
         ? (
           <div>
             <h1>People currently online</h1>
+            <div className="star-six">
+            </div>
             <div className="activeContainer">
-              <h2>
+              <h4>
                 {users.map(({name, room}) => (
                   <div key={name} className="activeItem">
                     <span>{ name }</span>&nbsp;is in the {room}
                     <img style={{width:"10%"}} alt="Dot Icon2" src={ dotIcon2 }/>
                   </div>
                 ))}
-              </h2>
+              </h4>
             </div>
           </div>
         )
         : null
     }
   </div>
+ 
 );
 
 export default TextContainer;

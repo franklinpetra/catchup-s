@@ -2,8 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #2979FF;
-    border-radius: 4px 4px 0 0;
+    background: #118644;
+    border-radius: 8px 8px 0 0;
     height: 60px;
     width: 100%;
   }
@@ -16,7 +16,7 @@
   color: white;
 }
   .dotIcon {
-    max-width:30%;
+    max-width:25%;
     margin:0% 0% 0% -10%;
   }
   
